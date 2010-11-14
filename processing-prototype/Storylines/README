@@ -1,0 +1,61 @@
+
+= Software Evolution Storylines =
+
+ This readme accompanies the prototype of the Software Evolution Storylines
+ project. It visualizes interactions between software developers through their
+ repository commits.
+
+  Examples of visualizations: 
+    http://vis.cs.ucdavis.edu/~ogawa/research/storylines/
+
+  Project code hosting:
+    http://code.google.com/p/evolines/
+
+== Instructions ==
+
+=== Prerequisites ===
+
+ This software is written in Processing.
+  - Download at http://processing.org
+
+ You will need to have the JUNG toolkit installed in your Java classpath.
+  - Download at http://jung.sourceforge.net
+
+=== Data ===
+
+ This project uses the same XML data format as code_swarm. You can see an
+ example of it with the "data/sample-repevents.xml" file. Most people need to
+ convert their version control system log data into the XML format. This can be
+ done with the conversion script that comes with the Python project.
+  - Download the Python converter script at http://code.google.com/p/codeswarm/
+  - It is located in "trunk/convert_logs/convert_logs.py"
+
+=== Config Files ===
+
+ Before running the program, you must have a config file which specifies the
+ parameters like data file location, image size, export format, etc.
+  - Copy the "config/sample.config" file and rename it to something that
+    describes your project.
+  - Edit the copy and change the necessary parameters.
+
+=== Running ===
+
+ Open the Processing environment and load Storylines.pde file.
+
+ Change the variable CONFIG_FILE (towards the top of Storylines.pde) to point
+ to your config file.
+
+ Run the program.
+
+
+== Thanks ==
+
+ Randall Munroe of XKCD for inspiration.
+ Chris Galvan for writing the majority of the code_swarm conversion script.
+ Yuan Niu, Chad Jones and James Shearer of UC Davis.
+
+== Credits ==
+
+ The Software Evolution Storylines prototype is written by Michael Ogawa and
+ released under the GPL version 3.
+
